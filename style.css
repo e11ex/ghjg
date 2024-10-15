@@ -1,0 +1,91 @@
+h1{
+    color: red;
+    text-align: center;
+}
+
+@keyframes circle-to-square {
+    from {
+      width: 180px;
+      height: 150px;
+      background-color: #F498AD;
+    }
+    1%{
+        left: 0px;
+      width: 180px;
+      height: 150px;
+      background-color: #2E9AFF;
+    }
+    to {
+        left: 100%;
+      width: 180px;
+      height: 150px;
+      background-color: #2E9AFF;
+    }
+  }
+  
+  @keyframes color-change {
+    from {
+      background-color: #F498AD;
+    }
+    50% {
+      background-color: #7F6EDB;
+    }
+    to {
+      background-color: #2E9AFF;
+    }
+
+  }
+  @keyframes color-change1 {
+    from {
+        
+        width: 180px;
+        height: 180px;
+        background-color: #F498AD;
+      }
+      1%{
+          left: 0px;
+        width: 180px;
+        height: 180px;
+        background-color: #2E9AFF;
+      }
+      10%{
+        
+        right: 20px;
+        top:600px;
+      width: 180px;
+      height: 180px;
+      background-color: #2E9AFF;
+    }
+      to {
+          left: 100%;
+        width: 180px;
+        height: 180px;
+        background-color: #2E9AFF;
+      }
+    
+  }
+.element{
+    
+    position:absolute ;
+    width: 250px;
+    height: 250px;
+    animation:
+    circle-to-square 10s infinite alternate ease-in,
+    color-change 2s alternate linear infinite;
+    
+    background-color: aqua;
+   
+}
+.s{
+    border-radius: 50%;
+    bottom: 100px;
+    position:absolute;
+    width: 250px;
+    height: 250px;
+    animation:
+    color-change1 10s infinite alternate ease-out,
+    color-change 2s alternate linear infinite;
+    
+    background-color: aqua;
+}
+
